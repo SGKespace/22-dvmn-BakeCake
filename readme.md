@@ -16,3 +16,12 @@
 - `DEBUG` — дебаг-режим. Поставьте True, чтобы увидеть отладочную информацию в случае ошибки.
 - `SECRET_KEY` — секретный ключ проекта (обязательно)
 - `ALLOWED_HOSTS` — см [документацию Django](https://docs.djangoproject.com/en/3.1/ref/settings/#allowed-hosts).
+
+## run with Docker
+Run Docker container
+
+```shell
+sudo docker-compose up
+```
+
+This should build the image and start the container. You may see Windows Defender warning about Docker trying to listen on port 8000. After the container has started, open the browser again on http://localhost:8000/, and you should see site
