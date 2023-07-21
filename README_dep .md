@@ -21,18 +21,6 @@ Breadcrumbs22-dvmn-BakeCake/.github/workflows / docker-image.yml     in master
 # Исправляем 
 
 
-name: Docker Image CI
-
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
-
-jobs:
-
-  build:
-
     runs-on: self-hosted
 
     
