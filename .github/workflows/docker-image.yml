@@ -1,17 +1,12 @@
 name: Docker Image CI
-
 on:
   push:
     branches: [ "master" ]
   pull_request:
     branches: [ "master" ]
-
 jobs:
-
   build:
-
     runs-on: self-hosted
-
     
     steps:
     - uses: actions/checkout@v3
@@ -19,5 +14,5 @@ jobs:
       run: docker compose up -d --build
       env:
         DEBUG: True
-        SECRET_KEY: 123
+        SECRET_KEY: 12345
         ALLOWED_HOSTS: localhost
