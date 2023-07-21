@@ -1,6 +1,6 @@
 # Bake Cake #
 
-## Запуск
+## Запуск b
 
 - Скачайте код
 - Установите зависимости командой `pip install -r requirements.txt`
