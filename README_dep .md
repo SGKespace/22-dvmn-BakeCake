@@ -19,16 +19,12 @@ cd ~
 [Про руннер](https://docs.github.com/en/actions/hosting-your-own-runners/managing-self-hosted-runners/adding-self-hosted-runners)
 
 
-# [Статья на Хабре](https://habr.com/ru/articles/711278/)
 
 
-![img_1.png](img_1.png)
 
-![img_3.png](img_3.png)
-
-Выбираем docker image 
+Затем выбираем docker image 
 Breadcrumbs22-dvmn-BakeCake/.github/workflows / docker-image.yml     in master
-Исправляем строчку  runs-on: self-hosted
+# Исправляем строчку  runs-on: self-hosted
 
 
 name: Docker Image CI
@@ -57,8 +53,11 @@ jobs:
 sudo apt-get update
 sudo apt-get install ca-certificates curl gnupg
 
-и далее ппо шагам https://docs.docker.com/engine/install/debian/
+[и далее ппо шагам](https://docs.docker.com/engine/install/debian/) устанавливаем докер
 
 
 usermod -a -G docker curator
 
+
+
+# [В ппомощь статья на Хабре](https://habr.com/ru/articles/711278/)
