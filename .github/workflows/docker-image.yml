@@ -16,5 +16,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: build and run
+       env:
+          SECRET_KEY: 12345
+          ALLOWED_HOSTS: localhost
        run: docker compose up -d --build
        
