@@ -24,7 +24,7 @@ cd ~
 
 Затем выбираем docker image 
 Breadcrumbs22-dvmn-BakeCake/.github/workflows / docker-image.yml     in master
-# Исправляем строчку  runs-on: self-hosted
+# Исправляем 
 
 
 name: Docker Image CI
@@ -41,10 +41,15 @@ jobs:
 
     runs-on: self-hosted
 
+    
     steps:
     - uses: actions/checkout@v3
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
+    - name: build and run
+       env:
+          DEBUG: True
+          SECRET_KEY: 12345
+          ALLOWED_HOSTS: localhost
+       run: docker compose up -d --build
 
 
 
